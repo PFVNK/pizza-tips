@@ -1,0 +1,130 @@
+/*************
+HEADER
+*************/
+
+.inputfield {
+	margin: 50px 0 0 0;
+}
+
+
+
+/*************
+HEADER
+*************/
+
+header h1 {
+	font-size: 3em;
+	font-family: 'Monoton', cursive;
+	text-align: center;
+	text-decoration: none;
+	color: black;	
+}
+
+header a {
+	text-decoration: none;
+}
+
+
+header p {
+	text-align: center;
+}
+
+
+/*************
+BODY
+*************/
+
+body {
+	background-color: #FFFAF0;
+}
+
+#intro {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+
+img {
+	max-width: 100%;
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+
+/*************
+LOGIN
+*************/
+
+form {
+	text-align: center;
+}
+
+form button {
+	margin: 40px 0;
+}
+
+#signup {
+	text-align: center;
+}
+
+
+/*************
+REGISTER
+*************/
+
+#whoyouare button {
+	margin: 40px 0 0 0;
+	text-align: center;
+}
+
+#whoyouare {
+	margin: 70px 0 0 20px;
+}
+
+.uno {
+	text-align: center;
+	margin: 40px 0 0 0;
+
+}
+
+/*************
+Tip Input
+*************/
+
+#welcome {
+	font-size: 1.2em;
+	margin: 10px 10px;
+}
+
+#logout {
+	text-align: right;
+	position: relative; 
+	top: -30px;
+	margin: 0px 10px;
+	text-decoration: none;
+	color: black;
+}
+
+#total {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.inputfield div:checkboxes {
+	
+}
+
+
+/*************
+FOOTER
+*************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 50px;
+}
+

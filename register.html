@@ -1,0 +1,43 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PIZZA TIPS</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  </head>
+  
+  <body>
+    <header>
+      <a href="index.html">
+        <h1>PIZZA TIPS</h1>
+      </a> 
+    </header>
+    
+    <section class="uno">
+      <p>Let us know who you are!</p>
+      <p>* required entry</p>
+    </section>
+
+    <form action="php/signup.php" method="POST" id="whoyouare">
+      <p>Name:</p>
+      <input type="text" name="name" placeholder="full name">
+      <p>Username:</p>
+      <input type="text" name="username" placeholder="username">
+      <p>Password:</p>
+      <input type="password" name="password" placeholder="password">
+      <br>
+      <button type="submit">SIGN UP</button>
+    </form>
+
+    <footer>
+      <p>&copy; 2017 PizzaTips</p>
+    </footer>
+  </body>
+
+</html>
