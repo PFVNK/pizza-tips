@@ -6,34 +6,37 @@ session_start();
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>PIZZA TIPS</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main1.css">
   </head>
 
-  <body>
-    <header>
-      <div id="welcome">
-      <?php
-        echo "Welcome, ". $_SESSION['username'] ."";
-      ?>
+  <body onload="myFunction()" class="tipin">
+    <div class="navbar">
+    <div class="dropdown">
+      <div class="dropbtn">
+      <img src="img/iconmenu.png" width="20" height="20">
+      <div class="dropdown-content">
+        <a href="#" onclick="clearStorage()">New Session</a>
+        <a href="weektotal.html">Week History</a>
       </div>
-      <div id="logout">
-        <a href="php/logout.php">LOGOUT</a>
-      </div>
-      <a href="index.html">
-        <h1>PIZZA TIPS</h1>
-      </a> 
-    </header>
+    </div> 
+    </div>  
+    <div class="pizzalogo">
+      <a href="index.html">PIZZA TIPS</a>
+    </div>
+    </div>
+
+    <div class="main">
     <div id="total">
       <p>TOTAL: $ <span id="demo"></span></p>
-
     </div>
-    
+  
     <form class="inputfield">
-      <p>ADDRESS(optional)</p>
+      <p>ADDRESS <span class="optional">(optional)</span></p>
       <input id="address" type="text" placeholder="">
       <br>
       <p>TIP</p>
@@ -49,14 +52,22 @@ session_start();
       <input id="five" type="checkbox">
       <label for="five"> $5  </label>
       <br>
-      <button type="button" value="save" id="submit" onclick="insert(); myFunction();">SUBMIT</button>
-      <button type="button" value="show" id="list" onclick="show()">LIST</button>
-      <button type="button" value="show" id="list" onclick="editArray()">EDIT</button>
+      <button type="button" value="save" class="hvr-ripple-out" id="submit" onclick="insert(); myFunction();">ENTER</button>
+      <button type="button" value="show" class="hvr-ripple-out" id="list" onclick="show()">LIST</button>
+      <button type="button" value="show" class="hvr-ripple-out" id="list" onclick="editArray()">EDIT</button>
     </form>
     <div id="display"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
       <p>&copy; 2017 PizzaTips</p>
     </footer>
+    </div>
+    <script src="slideshow.js"></script>
     <script src="JStipinput.js"></script>
   </body>
 

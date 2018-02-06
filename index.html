@@ -5,30 +5,46 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>PIZZA TIPS</title>
-		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	</head>
-	
-	<body>
-		<header>
-			<a href="index.html">
-				<h1>PIZZA TIPS</h1>
-			<a>	
-		</header>
-		<div id="intro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset="utf-8">
+    <title>PIZZA TIPS</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main1.css">
+  </head>
+
+  <body onload="myFunction()" class="tipin">
+    <div class="navbar">
+    <div class="dropdown">
+      <div class="dropbtn">
+      <img src="img/iconmenu.png" width="20" height="20">
+      <div class="dropdown-content">
+        <a href="tipinput.html">Tip Input</a>
+        <a href="weektotal.html">Week History</a>
+      </div>
+    </div> 
+    </div>  
+    <div class="pizzalogo">
+      <a href="#">PIZZA TIPS</a>
+    </div> 
+    </div>
 			<section>
-				<a href="tipinput.html">
-					<img src="img/pizzaslice3.png" alt="">
-				</a>
+
+					<img class="mySlides" src="img/pepza.jpg" style="width:800px;height:580px;">
+					<div class="centered">
+					<button onclick="location.href='tipinput.html'" class="btn">ENTER</button>
+					</div>
+					<img class="mySlides" src="img/zaoven.jpg" style="width:800px;height:580px;">
+					<img class="mySlides" src="img/tomza.jpg" style="width:800px;height:580px;">
+					<img class="mySlides" src="img/grassza.jpg" style="width:800px;height:580px;">
+
 			</section>
-		</div>
 
 		<footer>
 			<p>&copy; 2017 PizzaTips</p>
 		</footer>
+		<script src="slideshow.js"></script>
+		<script src="JStipinput.js"></script>
 	</body>
 
 </html>
